@@ -1,13 +1,42 @@
 {
     "key": "group_5c6f2fe444730",
     "title": "Easy CTA Block",
-    "fields": false,
+    "fields": [
+        {
+            "key": "field_5c8822046971f",
+            "label": "CTA",
+            "name": "cta",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "ctas"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
+        }
+    ],
     "location": [
         [
             {
-                "param": "post_type",
+                "param": "block",
+                "operator": "=="
+            }
+        ],
+        [
+            {
+                "param": "page",
                 "operator": "==",
-                "value": "ctas"
+                "value": "2"
             }
         ]
     ],
@@ -19,5 +48,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1550791722
+    "modified": 1552425562
 }

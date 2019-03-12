@@ -1,7 +1,7 @@
 <?php
 /**
  * Creation and administration of Easy CTA.
- * 
+ *
  */
 
 class Easy_CTA {
@@ -20,9 +20,9 @@ class Easy_CTA {
 		$this->load_dependencies();
 		$this->define_post_types();
 		// $this->acf_json_save();
-		
+
 	}
-	
+
 
 /**
  * Load Plugin Dependencies
@@ -32,7 +32,7 @@ class Easy_CTA {
 
 	private function load_dependencies() {
 		// Resources post type and associated taxonomies.
-		
+
 		// DOCUMENTATION EXAMPLE
 		// https://codex.wordpress.org/Function_Reference/register_activation_hook
 		// include_once dirname( __FILE__ ) . '/your_additional_file.php';
@@ -40,11 +40,13 @@ class Easy_CTA {
 
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-easy-cta-post-types.php';
 
+	  require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-easy-cta-filters.php';
+
 		// Pull in our loader that abstracts away actions and filters.
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-easy-cta-loader.php';
 		$this->loader = new Easy_CTA_Loader();
 
-		// Get ACF Json 
+		// Get ACF Json
 		// require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-easy-cta-acf.php';
 		// $this->loader = new Easy_CTA_ACF_Json();
 
@@ -59,18 +61,18 @@ class Easy_CTA {
 
 		$types = new Easy_CTA_Post_Types( $this->get_version() );
 		$this->loader->add_action('init', $types, 'add_post_types' );
-		
+
 	}
 
 		/**
-	 * Save to ACF 
+	 * Save to ACF
 	 * Create any custom post types needed by the Fintech area of the site.
 	 * @return null
 	 */
 	// private function acf_json_save() {
 
 	// 	$acfsave = new Easy_CTA_ACF_Json( $this->get_version() );
-		
+
 	// }
 
 	/**
