@@ -179,7 +179,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "50",
+                "width": "35",
                 "class": "",
                 "id": ""
             },
@@ -194,6 +194,21 @@
             "return_format": "value"
         },
         {
+            "key": "field_5c944cc697e8b",
+            "label": "Text color",
+            "name": "cta_text_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "35",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
             "key": "field_5c881e8d9567c",
             "label": "Width",
             "name": "width",
@@ -202,7 +217,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "50",
+                "width": "30",
                 "class": "",
                 "id": ""
             },
@@ -344,5 +359,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1553221719
+    "modified": 1553222997
 }

@@ -1,12 +1,7 @@
 <?php
 
 
-// KAT - this is the piece I'm struggling with.
-// I'm trying to make ACF save these two json files specifically in my plugin,
-// without disrupting wherever the theme has been saving the json.
-// I found this online, it seems right but I just can't get my head around
-// how to implement it with the loader
-
+// I don't think this works...even if I load it just normal it doesn't work
 
 
 

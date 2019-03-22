@@ -39,9 +39,9 @@ class Easy_CTA {
 		// register_activation_hook( __FILE__, array( 'YourAdditionalClass', 'on_activate_function' ) );
 
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-easy-cta-post-types.php';
-
 	  require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-easy-cta-filters.php';
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-easy-cta-functions.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-easy-cta-blocks.php';
 
 		// Pull in our loader that abstracts away actions and filters.
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-easy-cta-loader.php';
