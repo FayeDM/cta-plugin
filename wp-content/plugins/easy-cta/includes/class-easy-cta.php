@@ -41,14 +41,15 @@ class Easy_CTA {
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-easy-cta-post-types.php';
 
 	  require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-easy-cta-filters.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-easy-cta-functions.php';
 
 		// Pull in our loader that abstracts away actions and filters.
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-easy-cta-loader.php';
 		$this->loader = new Easy_CTA_Loader();
 
 		// Get ACF Json
-		// require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-easy-cta-acf.php';
-		// $this->loader = new Easy_CTA_ACF_Json();
+		//require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-easy-cta-acf.php';
+
 
 	}
 

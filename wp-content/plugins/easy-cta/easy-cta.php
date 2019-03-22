@@ -1,10 +1,10 @@
 <?php
 /**
  * Plugin Name:     Easy CTA
- * Plugin URI:      
- * Description:     Easy and customizable CTAs.
+ * Plugin URI:
+ * Description:     Easy for developers to customize and their clients to use.
  * Author:          Faye Polson
- * Author URI:      
+ * Author URI:
  * Text Domain:     easy-cta
  * Domain Path:     /languages
  * Version:         0.1.0
