@@ -80,7 +80,7 @@
             "label": "Calls to Action",
             "name": "cta_calls_to_action",
             "type": "repeater",
-            "instructions": "For each button, set the URL, the Link Text, and choose whether or not to open in a new tab.",
+            "instructions": "For each button, set the style, the URL, the Link Text, and choose whether or not to open in a new tab.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -94,6 +94,29 @@
             "layout": "table",
             "button_label": "",
             "sub_fields": [
+                {
+                    "key": "field_5c9ea3ca096b6",
+                    "label": "Button Style",
+                    "name": "button_style",
+                    "type": "button_group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "primary": "Primary",
+                        "secondary": "Secondary",
+                        "tertiary": "Tertiary"
+                    },
+                    "allow_null": 0,
+                    "default_value": "primary",
+                    "layout": "horizontal",
+                    "return_format": "value"
+                },
                 {
                     "key": "field_5c9447cccdde4",
                     "label": "Button Text",
@@ -359,5 +382,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1553222997
+    "modified": 1553900548
 }

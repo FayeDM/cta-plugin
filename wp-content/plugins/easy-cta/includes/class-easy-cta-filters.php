@@ -15,5 +15,6 @@ add_filter('use_block_editor_for_post_type', function( $useBlockEditor, $postTyp
 
 
 
+//NOTES DURING DEV
 
 // Need to wrap my head around how to call this correctly for the loader

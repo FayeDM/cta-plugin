@@ -37,7 +37,7 @@ function ecta_acf_init() {
 				'name'            => 'cta',
 				'title'           => __( 'CTA' ),
 				'description'     => __( 'A custom cta block.' ),
-				'render_callback' => 'ecta_acf_bock_render_callback',
+				'render_callback' => 'ecta_acf_block_render_callback',
 				'category'        => 'ecta-blocks',
 				'icon'            => 'lightbulb',
 				'keywords'        => array( 'cta', 'standard' ),
@@ -47,3 +47,27 @@ function ecta_acf_init() {
 	}
 }
 add_action( 'acf/init', 'ecta_acf_init' );
+
+
+function ecta_acf_block_render_callback( $block ) {
+
+	// convert name into path friendly slug
+	$slug      = str_replace('acf/', '', $block['name']);
+	$themeurl  = get_theme_file_path("/template-parts/blocks/block-{$slug}.php");
+	$pluginurl = plugin_dir_path( dirname( __FILE__ ) ) . 'blocks/block-' . $slug . '.php';
+
+	// include a template part from within the "template-parts/block" folder
+	if( file_exists( $themeurl ) ) {
+		include( $themeurl );
+	} elseif( file_exists( $pluginurl ) ) {
+
+		require "$pluginurl";
+	}
+}
+
+
+
+//NOTES DURING DEV
+
+
+// Need to wrap my head around how to call this correctly for the loader

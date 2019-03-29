@@ -60,8 +60,9 @@
  }
 
 
-
-
-
+//NOTES DURING DEV
 
 // Need to wrap my head around how to call this correctly for the loader
+
+
+// Need to find a way to get ACF to pull the initial json from my plugin but only on activation IF the field groups don't already exists
