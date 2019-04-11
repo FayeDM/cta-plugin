@@ -27,7 +27,7 @@ $custom_class     = get_field( 'custom_class', $cta_id );
 
 $classes      = [
 	'ecta',
-  'ecta--standard ',
+  'ecta--standard',
   $alignment_class,
   $container_class,
   $bg_style_class,
@@ -61,7 +61,9 @@ $classes      = [
             $btn_url    = get_sub_field( 'button_url', $cta_id );
             $btn_target = get_sub_field( 'button_target', $cta_id );
             if ( true === $btn_target):
-              $target="_blank";
+            	$target= '_blank';
+				else :
+				$target= '_self';
             endif;
             ?>
               <a href="<?php echo esc_url( $btn_url );?>" class="btn btn--<?php echo esc_attr( $btn_style );?>" target="<?php echo esc_attr( $target );?>"><?php echo $btn_text; ?></a>

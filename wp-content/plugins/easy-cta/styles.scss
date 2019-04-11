@@ -1,0 +1,19 @@
+.ecta {
+	@at-root #{&}--fullwidth {
+		margin-left: calc(-100vw / 2 + 100% / 2);
+		margin-right: calc(-100vw / 2 + 100% / 2);
+		max-width: 100vw;
+	}
+
+	@at-root #{&}--aligncenter {
+		text-align: center;
+	}
+
+	@at-root #{&}--alignleft {
+		text-align: left;
+	}
+
+	@at-root #{&}--alignright {
+		text-align: right;
+	}
+}
