@@ -1,0 +1,1 @@
+{"version":3,"sources":["editors/editor.scss"],"names":[],"mappings":"AAAA,mCAGI,WAAA,KACA,MAAA,mBACA,YAAA","file":"editor.css","sourcesContent":[".wp-block-embed-youtube {\n\n  figcaption {\n    text-align: left;\n    color: color-preset(grey);\n    font-weight: fw(bold);\n  }\n}\n"]}

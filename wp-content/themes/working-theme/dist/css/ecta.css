@@ -1,0 +1,11 @@
+/*!
+Plugin Name: ecta
+Author: Faye Polson
+Author URI: http://kanopistudios.com
+Description: ecta
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: ecta
+*/.ecta--fullwidth{margin-left:calc(-100vw / 2 + 100% / 2);margin-right:calc(-100vw / 2 + 100% / 2);width:100vw}.ecta--aligncenter{text-align:center}.ecta--alignleft{text-align:left}.ecta--alignright{text-align:right}.ecta--standard{padding:2rem .5rem}.ecta--standard .cta__headline{font-size:2rem;margin-bottom:.75rem}.ecta--standard .cta__subline{font-size:1.5rem;margin-top:0}.ecta--standard .cta__message{font-size:1.25rem}
+/*# sourceMappingURL=ecta.css.map */

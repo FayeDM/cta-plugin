@@ -1,0 +1,37 @@
+.ecta {
+	@at-root #{&}--fullwidth {
+		margin-left: calc(-100vw / 2 + 100% / 2);
+		margin-right: calc(-100vw / 2 + 100% / 2);
+		width: 100vw;
+	}
+
+	@at-root #{&}--aligncenter {
+		text-align: center;
+	}
+
+	@at-root #{&}--alignleft {
+		text-align: left;
+	}
+
+	@at-root #{&}--alignright {
+		text-align: right;
+	}
+	@at-root #{&}--standard {
+		padding: 2rem .5rem;
+
+		.cta__headline {
+			font-size: 2rem;
+			margin-bottom: .75rem;
+		}
+
+		.cta__subline {
+			font-size: 1.5rem;
+			margin-top: 0;
+		}
+
+		.cta__message {
+			font-size: 1.25rem;
+		}
+	}
+
+}

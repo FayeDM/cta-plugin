@@ -1,0 +1,35 @@
+html {
+	font-size: rem-calc(16);
+}
+
+.site-content {
+	@include container;
+}
+
+.site-main {
+	> .hentry {
+		margin-bottom: 0;
+	}
+}
+
+.skip-link {
+	display: none;
+}
+
+#colophon,
+#masthead {
+	padding: 30px 0;
+	background-color: #efefef;
+
+	> div {
+		@include container;
+	}
+}
+
+#masthead {
+	margin-bottom: 100px;
+}
+
+#colophon {
+	margin-top: 100px;
+}

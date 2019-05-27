@@ -1,0 +1,61 @@
+$white: #fff;
+$black: #231f20;
+
+$color-presets: (
+
+	white: $white,
+	black: $black,
+	dark-grey: #747678,
+	grey: #b2b4b2,
+	lighter-grey: #f5f5f5,
+	light-grey: #d5d6d2,
+	light-grey-tint-10: #bfc0bd,
+	ecta-blue: #007cbc, // primary color
+	ecta-blue-10: #e6f2f8, // primary color and 10% tint of primary blue
+	ecta-cream: #fef7e6, // primary color
+	ecta-darker-blue: #003e5e, // shade of primary blue
+	ecta-dark-blue: #005d8d, // shade of primary blue
+	ecta-blue-80: #3396c9, // 80% tint of primary blue
+	ecta-blue-60: #66b0d7, // 60% tint of primary blue
+	ecta-blue-40: #99cbe4, // 40% tint of primary blue
+	ecta-blue-20: #cce5f2, // 20% tint of primary blue
+	ecta-pink: #de119c, // student career level, homepage stats, popular tags
+	ecta-red: #de2d1f, // press release tags, your career tags
+	ecta-orange: #ff6319, // hero slider, CAREER CENTER SECTION, awards, certification, icons, membership
+	ecta-dark-yellow: #f0ab00, // business leader career level
+	ecta-yellow: #ffcb00, // hero slider, CONTENT CENTER SECTION, strategic advisor career level
+	ecta-light-green: #bed600, // hero slider, gernalist/specalist career level, CHAPTER SECTION, connect
+	ecta-green: #69be28, // MEMBERSHIP SECTION, icons
+	ecta-dark-green: #008931, // webinars & promotions in content center
+	ecta-dark-teal: #008670, // media tags, homepage stats
+	ecta-teal: #009aa6, // hero slider
+	ecta-blue-alt: #00a1de, // ABOUT SECTION, team, purpose, foundation career level
+	ecta-violet: #4b08a1, // news tags, homepage stats, new & next tags
+	ecta-violet-07: #F2EEF8, // opaque rgba .07
+	ecta-blue-07: #EDF8FD, // opaque rgba .07
+	ecta-light-green-07: #FAFCED, // opaque rgba .07
+	ecta-yellow-07: #FFFBED, // opaque rgba .07
+	ecta-dark-yellow-07: #FEF9ED, // opaque rgba .07
+
+);
+
+$color__background-body: $white;
+$color__background-screen: #f1f1f1;
+$color__background-hr: #ccc;
+$color__background-button: #e6e6e6;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+
+$color__text-screen: #21759b;
+$color__text-input: #666;
+$color__text-input-focus: #111;
+$color__link: color-preset(black);
+$color__link-visited: color-preset(black);
+$color__link-hover: color-preset(black);
+$color__text-main: color-preset(black);
+
+$color__border-button: #ccc #ccc #bbb;
+$color__border-button-hover: #ccc #bbb #aaa;
+$color__border-button-focus: #aaa #bbb #bbb;
+$color__border-input: color-preset(black);
+$color__border-abbr: #000;
