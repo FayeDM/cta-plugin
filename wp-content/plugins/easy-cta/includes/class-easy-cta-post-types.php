@@ -36,7 +36,7 @@ class Easy_CTA_Post_Types {
 				'show_in_nav_menus'   => true,
 				'query_var'           => true,
 				'has_archive'         => false,
-				'show_in_rest'        => true,
+				'show_in_rest'        => false,
 				/* The rewrite handles the URL structure. */
 				'rewrite'             => [
 					'slug'       => 'ctas',

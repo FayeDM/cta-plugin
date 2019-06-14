@@ -4,14 +4,15 @@
  *
  */
 
-$cta_id = get_field( 'easy_cta_block' );
+$cta_id           = get_field( 'easy_cta_block' );
 
-$headline    = get_field( 'cta_headline', $cta_id );
-$sub_heading = get_field( 'cta_sub_heading', $cta_id );
-$messaging   = get_field( 'cta_messaging', $cta_id );
+$headline         = get_field( 'cta_headline', $cta_id );
+$sub_heading      = get_field( 'cta_sub_heading', $cta_id );
+$messaging        = get_field( 'cta_messaging', $cta_id );
+
+$bg_img           = get_field( 'cta_background_image', $cta_id );
 
 $text_color       = get_field( 'cta_text_color', $cta_id );
-$bg_img           = get_field( 'cta_background_image', $cta_id );
 $bg_color         = get_field( 'cta_background_color', $cta_id );
 
 $alignment        = get_field( 'text_alignment', $cta_id );
@@ -33,6 +34,9 @@ $classes      = [
   $bg_style_class,
   $custom_class,
 ];
+
+ecta_color_selection( $text_color, $bg_color );
+
 ?>
 
 <section id="ectapost-<?php echo esc_attr( $cta_id );?>">
@@ -45,7 +49,7 @@ $classes      = [
 
       <p><?php echo esc_html( $sub_heading ); ?></p>
 
-      <p><?php echo wp_kses_post( $messaging ); ?></p>
+      <?php echo wp_kses_post( $messaging ); ?>
 
     </div>
 
