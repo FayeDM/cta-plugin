@@ -26,7 +26,7 @@ $bg_style_class   = 'ecta--bg' . $bg_style;
 $custom_class     = get_field( 'custom_class', $cta_id );
 
 $classes      = [
-	'ecta',
+  'ecta',
   'ecta--standard',
   $alignment_class,
   $container_class,
