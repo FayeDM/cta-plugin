@@ -49,7 +49,7 @@
 		} else {
 
 		   $css = '.ecta__text { color: ' . $color1 . '; }';
-		   
+
 	   };
 
 
@@ -60,6 +60,31 @@
 }
 
 	add_action( 'get_footer', 'ecta_color_selection' );
+
+
+	 /**
+	  * Place BG Image into CSS
+	  *
+	  * @param image $bg_img variable used by the picker for text
+	  */
+
+	   function ecta_bg_img( $bg_img ) {
+		   $img_css = '';
+
+		   if ( ! empty( $bg_img ) ) {
+
+			$img_css = '.ecta--bgimage { background-image: url(' . $bg_img . '); }';
+
+		   };
+
+
+		wp_register_style( 'ecta-bg', false );
+		wp_enqueue_style( 'ecta-bg' );
+		wp_add_inline_style( 'ecta-bg', $img_css );
+
+	}
+
+		add_action( 'get_footer', 'ecta_bg_img' );
 
  /**
   * Add the theme colors into ACF's palette

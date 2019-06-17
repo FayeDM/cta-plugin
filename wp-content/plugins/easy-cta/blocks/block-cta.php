@@ -7,7 +7,7 @@
 $cta_id           = get_field( 'easy_cta_block' );
 
 $headline         = get_field( 'cta_headline', $cta_id );
-$sub_heading      = get_field( 'cta_sub_heading', $cta_id );
+$overline         = get_field( 'cta_sub_heading', $cta_id );
 $messaging        = get_field( 'cta_messaging', $cta_id );
 
 $bg_img           = get_field( 'cta_background_image', $cta_id );
@@ -36,6 +36,7 @@ $classes      = [
 ];
 
 ecta_color_selection( $text_color, $bg_color );
+ecta_bg_img( $bg_img['url'] );
 
 ?>
 
@@ -45,11 +46,11 @@ ecta_color_selection( $text_color, $bg_color );
 
     <div class="ecta__text">
 
-      <h3><?php echo esc_html( $headline ); ?></h3>
+	  <p class="ecta__overline"><?php echo esc_html( $overline ); ?></p>
 
-      <p><?php echo esc_html( $sub_heading ); ?></p>
+      <h3 class="ecta__heading"><?php echo esc_html( $headline ); ?></h3>
 
-      <?php echo wp_kses_post( $messaging ); ?>
+      <div class="ecta__message"><?php echo wp_kses_post( $messaging ); ?></div>
 
     </div>
 
