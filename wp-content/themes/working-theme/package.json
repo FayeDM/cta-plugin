@@ -17,7 +17,7 @@
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.8.1",
     "breakpoint-sass": "^2.7.1",
-    "browser-sync": "^2.26.5",
+    "browser-sync": "^2.26.7",
     "del": "^3.0.0",
     "glob": "^7.1.2",
     "gulp": "^3.9.1",
@@ -33,7 +33,7 @@
     "gulp-imagemin": "^4.1.0",
     "gulp-jshint": "^2.1.0",
     "gulp-livereload": "^4.0.0",
-    "gulp-load-plugins": "^1.5.0",
+    "gulp-load-plugins": "^1.6.0",
     "gulp-natural-sort": "^0.1.1",
     "gulp-notify": "^3.2.0",
     "gulp-plumber": "^1.2.0",
