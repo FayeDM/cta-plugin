@@ -35,8 +35,8 @@ $classes      = [
   $custom_class,
 ];
 
-ecta_color_selection( $text_color, $bg_color );
-ecta_bg_img( $bg_img['url'] );
+ecta_color_selection( $cta_id, $text_color, $bg_color );
+ecta_bg_img( $cta_id, $bg_img['url'] );
 
 ?>
 
