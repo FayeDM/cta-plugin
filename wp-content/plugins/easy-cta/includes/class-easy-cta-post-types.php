@@ -1,22 +1,34 @@
 <?php
-
-class Easy_CTA_Post_Types {
-
-	private $version;
+/**
+ * Creation and administration of Easy CTA Post Types.
+ *
+ * @package easy_cta
+ */
 
 /**
- * Constructor
- * Simple constructor to help organize our post type activities.
- * @param [type] $version [description]
+ * Class Easy_CTA_Post_Types
  */
+class Easy_CTA_Post_Types {
+
+	/**
+	 * Version
+	 *
+	 * @var version
+	 */
+	private $version;
+
+	/**
+	 * Constructor
+	 * Simple constructor to help organize our post type activities.
+	 *
+	 * @param [type] $version [description].
+	 */
 	public function __construct( $version ) {
 		$this->version = $version;
 	}
 
  /**
   * Register Custom Post Types
-  * Creation of the Resources post type for Haas.
-  * @return null
   */
   public function add_post_types()
 	{
