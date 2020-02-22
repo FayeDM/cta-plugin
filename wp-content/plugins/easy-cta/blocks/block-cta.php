@@ -29,20 +29,25 @@ $custom_class     = get_field( 'custom_class', $cta_id );
 $classes      = [
   'ecta',
   'ecta--standard',
+  'ecta--text-' . $text_color,
   $alignment_class,
   $container_class,
   $bg_style_class,
-  $custom_class,
+  $custom_class
 ];
-
-ecta_color_selection( $cta_id, $text_color, $bg_color );
-ecta_bg_img( $cta_id, $bg_img['url'] );
-
 ?>
 
 <section id="ectapost-<?php echo esc_attr( $cta_id );?>">
 
-  <div class="<?php echo esc_attr( implode( ' ', $classes ) ); ?>">
+	<?php if( ! empty($bg_img) ) { ?>
+
+		<div class="<?php echo esc_attr( implode( ' ', $classes ) ); ?>" style="background-image:url( <?php echo esc_url( $bg_img['url'] );?> );">
+
+	<?php } else { ?>
+
+		  <div class="<?php echo esc_attr( implode( ' ', $classes ) ); ?> ecta--bg-<?php echo esc_attr( $bg_color );?>">
+
+	<?php } ?>
 
     <div class="ecta__text">
 
