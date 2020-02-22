@@ -19,7 +19,6 @@ class Easy_CTA {
 
 		$this->load_dependencies();
 		$this->define_post_types();
-		// $this->acf_json_save();
 
 	}
 
@@ -46,9 +45,6 @@ class Easy_CTA {
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-easy-cta-loader.php';
 		$this->loader = new Easy_CTA_Loader();
 
-		// Get ACF Json
-		//require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-easy-cta-acf.php';
-
 
 	}
 
@@ -63,17 +59,6 @@ class Easy_CTA {
 		$this->loader->add_action('init', $types, 'add_post_types' );
 
 	}
-
-		/**
-	 * Save to ACF
-	 * Create any custom post types needed by the Fintech area of the site.
-	 * @return null
-	 */
-	// private function acf_json_save() {
-
-	// 	$acfsave = new Easy_CTA_ACF_Json( $this->get_version() );
-
-	// }
 
 	/**
 	 * Run Loader
